@@ -227,9 +227,9 @@ const App = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 to-gray-800">
       {/* Navigation */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-gray-800 shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <motion.div
@@ -251,14 +251,14 @@ const App = () => {
               <motion.a
                 whileHover={{ y: -2 }}
                 href="#courses"
-                className="text-gray-700 hover:text-cyan-600 transition font-medium"
+                className="text-gray-300 hover:text-cyan-400 transition font-medium"
               >
                 Courses
               </motion.a>
               <motion.a
                 whileHover={{ y: -2 }}
                 href="#curriculum"
-                className="text-gray-700 hover:text-cyan-600 transition font-medium"
+                className="text-gray-300 hover:text-cyan-400 transition font-medium"
               >
                 Curriculum
               </motion.a>
@@ -275,7 +275,7 @@ const App = () => {
             {/* Mobile menu button */}
             <motion.button
               whileTap={{ scale: 0.9 }}
-              className="md:hidden text-2xl focus:outline-none text-gray-700"
+              className="md:hidden text-2xl focus:outline-none text-gray-300"
               onClick={toggleMenu}
             >
               ☰
@@ -294,13 +294,13 @@ const App = () => {
                 <div className="mt-4 pb-4 space-y-3">
                   <a
                     href="#about"
-                    className="block text-gray-700 hover:text-cyan-600 transition font-medium"
+                    className="block text-gray-300 hover:text-cyan-400 transition font-medium"
                   >
                     About
                   </a>
                   <a
                     href="#curriculum"
-                    className="block text-gray-700 hover:text-cyan-600 transition font-medium"
+                    className="block text-gray-300 hover:text-cyan-400 transition font-medium"
                   >
                     Curriculum
                   </a>
@@ -316,7 +316,7 @@ const App = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        {/* Background gradient */}
+        {/* Background linear */}
         <div className="absolute inset-0 bg-linear-to-br from-cyan-500/10 via-blue-600/10 to-indigo-700/10 -z-10"></div>
 
         {/* Floating elements */}
@@ -332,13 +332,13 @@ const App = () => {
           >
             <div className="flex items-center mb-6">
               <span className="bg-linear-to-r from-cyan-500 to-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">
-                8-Week Intensive
+                6-Weeks Intensive
               </span>
-              <span className="ml-3 text-sm text-gray-600">
-                July 13th - September 7th, 2025
+              <span className="ml-3 text-sm text-gray-400">
+                July 13th - Auhust 22nd, 2025
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
               Master{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-600 to-blue-700">
                 Blockchain
@@ -347,9 +347,9 @@ const App = () => {
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-700">
                 AI
               </span>{" "}
-              in 8 Weeks
+              in 6 Weeks
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-lg">
+            <p className="text-xl text-gray-400 mb-8 max-w-lg">
               Our intensive program gives you the structured learning path to go
               from beginner to builder in blockchain and AI technologies.
             </p>
@@ -365,7 +365,7 @@ const App = () => {
               <motion.button
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.98 }}
-                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-bold hover:border-cyan-500 hover:text-cyan-600 transition-all"
+                className="border-2 border-gray-700 text-gray-300 px-8 py-4 rounded-full font-bold hover:border-cyan-500 hover:text-cyan-400 transition-all"
               >
                 <a href="#curriculum">View Curriculum</a>
               </motion.button>
@@ -381,11 +381,11 @@ const App = () => {
                     {avatar.initials}
                   </div>
                 ))}
-                <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-medium">
+                <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 font-medium">
                   +10
                 </div>
               </div>
-              <div className="text-gray-600">
+              <div className="text-gray-400">
                 <p className="font-medium">Already enrolled</p>
                 <p className="text-sm">10+ students registered</p>
               </div>
@@ -398,50 +398,50 @@ const App = () => {
             className="md:w-1/2 flex justify-center scroll-animate"
           >
             <div className="relative w-full max-w-lg">
-              <div className="relative bg-white rounded-2xl p-8 shadow-2xl border border-gray-100">
+              <div className="relative bg-gray-800 rounded-2xl p-8 shadow-2xl border border-gray-700">
                 <div className="flex justify-center mb-6">
                   <div className="flex space-x-4">
                     <div className="w-14 h-14 bg-linear-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                       <FaEthereum className="text-2xl text-white" />
                     </div>
-                    <div className="w-14 h-14 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
+                    <div className="w-14 h-14 bg-linear-to-r from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
                       <FaRobot className="text-2xl text-white" />
                     </div>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center text-gray-800">
+                <h3 className="text-2xl font-bold mb-4 text-center text-white">
                   What You'll Learn
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <div className="w-6 h-6 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-gray-700 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-3 h-3 bg-linear-to-r from-cyan-500 to-blue-600 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Blockchain fundamentals & smart contract development
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-gray-700 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-3 h-3 bg-linear-to-r from-cyan-500 to-blue-600 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Machine learning concepts & AI model training
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-gray-700 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-3 h-3 bg-linear-to-r from-cyan-500 to-blue-600 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Integration of blockchain and AI technologies
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-gray-700 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-3 h-3 bg-linear-to-r from-cyan-500 to-blue-600 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Hands-on projects with real-world applications
                     </span>
                   </li>
@@ -453,7 +453,7 @@ const App = () => {
       </section>
 
       {/* Technology Cards Section */}
-      <section id="courses" className="py-20 bg-white">
+      <section id="courses" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -462,10 +462,10 @@ const App = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16 scroll-animate"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Master Cutting-Edge Technologies
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Dive deep into both blockchain and AI with our comprehensive
               curriculum.
             </p>
@@ -525,7 +525,7 @@ const App = () => {
         </div>
       </section>
 
-      <section id="curriculum" className="py-16 bg-white">
+      <section id="curriculum" className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -534,10 +534,10 @@ const App = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12 scroll-animate"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Dual-Track Learning Timeline
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               8-weeks journey with dedicated Blockchain and AI tracks starting
               July 13th
             </p>
@@ -582,8 +582,8 @@ const App = () => {
 
                   {/* Date marker */}
                   <div className="w-full md:w-32 flex-shrink-0 flex justify-center mb-4 md:mb-0">
-                    <div className="bg-white border-2 border-gray-200 rounded-lg px-3 py-1 shadow-sm">
-                      <p className="font-medium text-gray-700 text-center">
+                    <div className="bg-gray-800 border-2 border-gray-700 rounded-lg px-3 py-1 shadow-sm">
+                      <p className="font-medium text-gray-300 text-center">
                         {item.date}
                       </p>
                     </div>
@@ -591,16 +591,16 @@ const App = () => {
 
                   {/* Blockchain content (left side) */}
                   <div className="w-full md:w-1/2 px-0 md:px-4 mb-4 md:mb-0">
-                    <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-6 shadow-md h-full border-l-4 border-purple-500">
+                    <div className="bg-linear-to-br from-gray-800 to-gray-900 rounded-xl p-6 shadow-md h-full border-l-4 border-purple-500">
                       <div className="flex items-center mb-3">
-                        <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mr-3">
-                          <FaEthereum className="text-purple-600" />
+                        <div className="w-10 h-10 rounded-lg bg-purple-900/50 flex items-center justify-center mr-3">
+                          <FaEthereum className="text-purple-400" />
                         </div>
-                        <h3 className="font-bold text-lg text-gray-800">
+                        <h3 className="font-bold text-lg text-white">
                           Blockchain Focus
                         </h3>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-300">
                         {item.blockchainContent ||
                           "Smart contracts & DApp development"}
                       </p>
@@ -608,7 +608,7 @@ const App = () => {
                         {item.blockchainTopics?.map((topic, i) => (
                           <li key={i} className="flex items-start">
                             <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-2"></span>
-                            <span className="text-gray-600">{topic}</span>
+                            <span className="text-gray-300">{topic}</span>
                           </li>
                         ))}
                       </ul>
@@ -617,23 +617,23 @@ const App = () => {
 
                   {/* AI content (right side) */}
                   <div className="w-full md:w-1/2 px-0 md:px-4">
-                    <div className="bg-linear-to-br from-cyan-50 to-blue-50 rounded-xl p-6 shadow-md h-full border-l-4 border-cyan-500">
+                    <div className="bg-linear-to-br from-gray-800 to-gray-900 rounded-xl p-6 shadow-md h-full border-l-4 border-cyan-500">
                       <div className="flex items-center mb-3">
-                        <div className="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center mr-3">
-                          <FaRobot className="text-cyan-600" />
+                        <div className="w-10 h-10 rounded-lg bg-cyan-900/50 flex items-center justify-center mr-3">
+                          <FaRobot className="text-cyan-400" />
                         </div>
-                        <h3 className="font-bold text-lg text-gray-800">
+                        <h3 className="font-bold text-lg text-white">
                           AI Focus
                         </h3>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-300">
                         {item.aiContent || "Machine learning fundamentals"}
                       </p>
                       <ul className="mt-3 space-y-2">
                         {item.aiTopics?.map((topic, i) => (
                           <li key={i} className="flex items-start">
                             <span className="w-2 h-2 bg-cyan-500 rounded-full mt-2 mr-2"></span>
-                            <span className="text-gray-600">{topic}</span>
+                            <span className="text-gray-300">{topic}</span>
                           </li>
                         ))}
                       </ul>
@@ -649,7 +649,7 @@ const App = () => {
       <OpportunitiesSection />
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-gray-50">
+      <section id="pricing" className="py-20 bg-gray-800">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -658,10 +658,10 @@ const App = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16 scroll-animate"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Choose Your Learning Path
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Flexible pricing options for every learning goal
             </p>
           </motion.div>
@@ -672,66 +672,76 @@ const App = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden border border-purple-100 scroll-animate"
+              className="bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-purple-900 scroll-animate"
             >
               <div className="bg-linear-to-r from-purple-500 to-indigo-600 p-6 text-white text-center">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FaEthereum className="text-2xl" />
                 </div>
-                <h3 className="text-2xl font-bold">Blockchain Only</h3>
+                <h3 className="text-2xl font-bold">Blockchain</h3>
                 <div className="mt-4 flex justify-center items-baseline">
                   <span className="text-4xl font-bold">₦37,500</span>
                 </div>
               </div>
               <div className="p-6">
-                <h4 className="font-semibold text-lg mb-4 text-gray-800">
+                <h4 className="font-semibold text-lg mb-4 text-white">
                   Includes:
                 </h4>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-purple-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-purple-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
-                      8 weeks of Blockchain content
+                    <span className="text-gray-300">
+                      6 weeks of Blockchain content
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-purple-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-purple-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Smart contract development
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-purple-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-purple-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       DApp building projects
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-purple-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-purple-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Blockchain community access
                     </span>
                   </li>
                 </ul>
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
+                <motion.a
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.4)",
+                  }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={window.open(
-                    "https://wa.me/message/4MJ37GXBJHCEP1",
-                    "_blank"
-                  )}
-                  className="w-full mt-8 bg-linear-to-r from-purple-500 to-indigo-600 text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all"
+                  href="https://wa.me/message/4MJ37GXBJHCEP1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-8 bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
                 >
-                  Enroll Blockchain Only
-                </motion.button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.479 5.092 1.479 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.13-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.148-.668.15-.198.297-.768.966-.94 1.164-.173.199-.347.223-.644.074-.297-.15-1.255-.461-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.13-.297-.199-.57-.347m-2.462-1.159c-.173.248-.5.396-.868.396s-.695-.149-.868-.396c-.173-.248-.198-.545-.074-.793.124-.248.397-.396.669-.396h.198c.248 0 .521.149.644.397.124.248.099.545-.074.792m1.488.694c-.347.545-.991.793-1.982.793-1.238 0-2.159-.396-2.857-1.183-.124-.149-.248-.149-.347-.149-.099 0-.248.025-.347.149-.421.422-1.164 1.191-1.24 1.562-.075.372.173.719.446.843.173.074.347.124.347.223 0 .099-.025.198-.149.347-.124.149-.272.322-.397.496-.124.174-.025.298.025.347.124.124.545.644 1.164 1.041.694.446 1.289.57 1.833.57.198 0 .372 0 .521-.025.52-.05 1.365-.248 1.982-.843.619-.595.867-1.29.917-1.437.05-.149.05-.248-.025-.347-.074-.099-.272-.074-.619.223" />
+                  </svg>
+                  <span>Enroll</span>
+                </motion.a>
               </div>
             </motion.div>
 
@@ -742,10 +752,10 @@ const App = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="relative scroll-animate"
             >
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-linear-to-r from-cyan-500 to-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">
                 BEST VALUE
               </div>
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-cyan-500">
+              <div className="bg-gray-800 rounded-xl shadow-xl overflow-hidden border-2 border-cyan-500">
                 <div className="bg-linear-to-r from-cyan-500 to-blue-600 p-6 text-white text-center">
                   <div className="flex justify-center space-x-2 mb-4">
                     <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center">
@@ -762,54 +772,64 @@ const App = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h4 className="font-semibold text-lg mb-4 text-gray-800">
+                  <h4 className="font-semibold text-lg mb-4 text-white">
                     Includes:
                   </h4>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                      <div className="w-5 h-5 bg-cyan-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                         <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                       </div>
-                      <span className="text-gray-700">Full 8-week program</span>
+                      <span className="text-gray-300">Full 6-week program</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                      <div className="w-5 h-5 bg-cyan-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                         <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                       </div>
-                      <span className="text-gray-700">
+                      <span className="text-gray-300">
                         Both Blockchain & AI tracks
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                      <div className="w-5 h-5 bg-cyan-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                         <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                       </div>
-                      <span className="text-gray-700">4 hands-on projects</span>
+                      <span className="text-gray-300">4 hands-on projects</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                      <div className="w-5 h-5 bg-cyan-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                         <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                       </div>
-                      <span className="text-gray-700">Dual certification</span>
+                      <span className="text-gray-300">Dual certification</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-cyan-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                      <div className="w-5 h-5 bg-cyan-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                         <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                       </div>
-                      <span className="text-gray-700">Priority mentorship</span>
+                      <span className="text-gray-300">Priority mentorship</span>
                     </li>
                   </ul>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
+                  <motion.a
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.4)",
+                    }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={window.open(
-                      "https://wa.me/message/4MJ37GXBJHCEP1",
-                      "_blank"
-                    )}
-                    className="w-full mt-8 bg-linear-to-r from-cyan-500 to-blue-600 text-white py-3 rounded-lg font-bold hover:shadow-xl transition-all shadow-lg shadow-cyan-400/30"
+                    href="https://wa.me/message/4MJ37GXBJHCEP1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full mt-8 bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
                   >
-                    Enroll Complete Bundle
-                  </motion.button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.479 5.092 1.479 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.13-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.148-.668.15-.198.297-.768.966-.94 1.164-.173.199-.347.223-.644.074-.297-.15-1.255-.461-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.13-.297-.199-.57-.347m-2.462-1.159c-.173.248-.5.396-.868.396s-.695-.149-.868-.396c-.173-.248-.198-.545-.074-.793.124-.248.397-.396.669-.396h.198c.248 0 .521.149.644.397.124.248.099.545-.074.792m1.488.694c-.347.545-.991.793-1.982.793-1.238 0-2.159-.396-2.857-1.183-.124-.149-.248-.149-.347-.149-.099 0-.248.025-.347.149-.421.422-1.164 1.191-1.24 1.562-.075.372.173.719.446.843.173.074.347.124.347.223 0 .099-.025.198-.149.347-.124.149-.272.322-.397.496-.124.174-.025.298.025.347.124.124.545.644 1.164 1.041.694.446 1.289.57 1.833.57.198 0 .372 0 .521-.025.52-.05 1.365-.248 1.982-.843.619-.595.867-1.29.917-1.437.05-.149.05-.248-.025-.347-.074-.099-.272-.074-.619.223" />
+                    </svg>
+                    <span>Enroll</span>
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
@@ -819,62 +839,72 @@ const App = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 scroll-animate"
+              className="bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-blue-900 scroll-animate"
             >
               <div className="bg-linear-to-r from-blue-500 to-cyan-600 p-6 text-white text-center">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FaRobot className="text-2xl" />
                 </div>
-                <h3 className="text-2xl font-bold">AI Only</h3>
+                <h3 className="text-2xl font-bold">Artificial Intelligence</h3>
                 <div className="mt-4 flex justify-center items-baseline">
                   <span className="text-4xl font-bold">₦37,500</span>
                 </div>
               </div>
               <div className="p-6">
-                <h4 className="font-semibold text-lg mb-4 text-gray-800">
+                <h4 className="font-semibold text-lg mb-4 text-white">
                   Includes:
                 </h4>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-blue-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-blue-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">4 weeks of AI content</span>
+                    <span className="text-gray-300">6 weeks of AI content</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-blue-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-blue-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Machine learning fundamentals
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-blue-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-blue-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       Model training projects
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-5 h-5 bg-blue-100 rounded-full mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-blue-900/50 rounded-full mr-3 mt-0.5 flex items-center justify-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">AI community access</span>
+                    <span className="text-gray-300">AI community access</span>
                   </li>
                 </ul>
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
+                <motion.a
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.4)",
+                  }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={window.open(
-                    "https://wa.me/message/4MJ37GXBJHCEP1",
-                    "_blank"
-                  )}
-                  className="w-full mt-8 bg-linear-to-r from-blue-500 to-cyan-600 text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all"
+                  href="https://wa.me/message/4MJ37GXBJHCEP1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-8 bg-linear-to-r from-blue-500 to-cyan-500 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
                 >
-                  Enroll AI Only
-                </motion.button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.479 5.092 1.479 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.13-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.148-.668.15-.198.297-.768.966-.94 1.164-.173.199-.347.223-.644.074-.297-.15-1.255-.461-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.13-.297-.199-.57-.347m-2.462-1.159c-.173.248-.5.396-.868.396s-.695-.149-.868-.396c-.173-.248-.198-.545-.074-.793.124-.248.397-.396.669-.396h.198c.248 0 .521.149.644.397.124.248.099.545-.074.792m1.488.694c-.347.545-.991.793-1.982.793-1.238 0-2.159-.396-2.857-1.183-.124-.149-.248-.149-.347-.149-.099 0-.248.025-.347.149-.421.422-1.164 1.191-1.24 1.562-.075.372.173.719.446.843.173.074.347.124.347.223 0 .099-.025.198-.149.347-.124.149-.272.322-.397.496-.124.174-.025.298.025.347.124.124.545.644 1.164 1.041.694.446 1.289.57 1.833.57.198 0 .372 0 .521-.025.52-.05 1.365-.248 1.982-.843.619-.595.867-1.29.917-1.437.05-.149.05-.248-.025-.347-.074-.099-.272-.074-.619.223" />
+                  </svg>
+                  <span>Enroll</span>
+                </motion.a>
               </div>
             </motion.div>
           </div>
@@ -905,29 +935,29 @@ const App = () => {
                 Class starts in:
               </h3>
               <div className="flex space-x-3 justify-center">
-                <div className="bg-white p-3 rounded-lg shadow-sm text-center min-w-[70px]">
-                  <div className="text-2xl font-bold text-cyan-600">
+                <div className="bg-gray-900 p-3 rounded-lg shadow-sm text-center min-w-[70px]">
+                  <div className="text-2xl font-bold text-cyan-400">
                     {timeLeft.days}
                   </div>
-                  <div className="text-xs text-gray-500">DAYS</div>
+                  <div className="text-xs text-gray-400">DAYS</div>
                 </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-center min-w-[70px]">
-                  <div className="text-2xl font-bold text-cyan-600">
+                <div className="bg-gray-900 p-3 rounded-lg shadow-sm text-center min-w-[70px]">
+                  <div className="text-2xl font-bold text-cyan-400">
                     {timeLeft.hours}
                   </div>
-                  <div className="text-xs text-gray-500">HOURS</div>
+                  <div className="text-xs text-gray-400">HOURS</div>
                 </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-center min-w-[70px]">
-                  <div className="text-2xl font-bold text-cyan-600">
+                <div className="bg-gray-900 p-3 rounded-lg shadow-sm text-center min-w-[70px]">
+                  <div className="text-2xl font-bold text-cyan-400">
                     {timeLeft.minutes}
                   </div>
-                  <div className="text-xs text-gray-500">MINS</div>
+                  <div className="text-xs text-gray-400">MINS</div>
                 </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-center min-w-[70px]">
-                  <div className="text-2xl font-bold text-cyan-600">
+                <div className="bg-gray-900 p-3 rounded-lg shadow-sm text-center min-w-[70px]">
+                  <div className="text-2xl font-bold text-cyan-400">
                     {timeLeft.seconds}
                   </div>
-                  <div className="text-xs text-gray-500">SECS</div>
+                  <div className="text-xs text-gray-400">SECS</div>
                 </div>
               </div>
             </div>
@@ -949,10 +979,10 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-linear-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
                   <FaRobot className="text-xl text-white" />
                 </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   DOT-E HUB
                 </span>
               </div>

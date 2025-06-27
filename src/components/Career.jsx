@@ -87,7 +87,7 @@ const OpportunitiesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -96,10 +96,10 @@ const OpportunitiesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Transform Your Future with Cutting-Edge Skills
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Blockchain and AI skills open doors to high-growth, high-paying
             careers in the most exciting tech fields.
           </p>
@@ -113,28 +113,28 @@ const OpportunitiesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-xl shadow-md text-center"
+              className="bg-gray-800 p-6 rounded-xl shadow-md text-center"
             >
-              <div className="text-3xl mb-2 text-cyan-600 flex justify-center">
+              <div className="text-3xl mb-2 text-cyan-400 flex justify-center">
                 {stat.icon}
               </div>
-              <h3 className="text-4xl font-bold text-gray-800 mb-2">
+              <h3 className="text-4xl font-bold text-white mb-2">
                 {stat.value}
               </h3>
-              <p className="text-gray-600">{stat.label}</p>
+              <p className="text-gray-400">{stat.label}</p>
             </motion.div>
           ))}
         </div>
 
         {/* Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex bg-white rounded-full p-1 shadow-md">
+          <div className="inline-flex bg-gray-800 rounded-full p-1 shadow-md">
             <button
               onClick={() => setActiveTab("blockchain")}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 activeTab === "blockchain"
-                  ? "bg-gradient-to-r from-purple-500 to-indigo-600 text-white"
-                  : "text-gray-700 hover:text-purple-600"
+                  ? "bg-linear-to-r from-purple-500 to-indigo-600 text-white"
+                  : "text-gray-300 hover:text-purple-400"
               }`}
             >
               Blockchain
@@ -143,8 +143,8 @@ const OpportunitiesSection = () => {
               onClick={() => setActiveTab("ai")}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 activeTab === "ai"
-                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white"
-                  : "text-gray-700 hover:text-cyan-600"
+                  ? "bg-linear-to-r from-cyan-500 to-blue-600 text-white"
+                  : "text-gray-300 hover:text-cyan-400"
               }`}
             >
               Artificial Intelligence
@@ -159,13 +159,13 @@ const OpportunitiesSection = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-xl shadow-lg overflow-hidden"
+            className="bg-gray-800 rounded-xl shadow-lg overflow-hidden"
           >
             <div
               className={`p-6 text-white ${
                 activeTab === "blockchain"
-                  ? "bg-gradient-to-r from-purple-500 to-indigo-600"
-                  : "bg-gradient-to-r from-cyan-500 to-blue-600"
+                  ? "bg-linear-to-r from-purple-500 to-indigo-600"
+                  : "bg-linear-to-r from-cyan-500 to-blue-600"
               }`}
             >
               <div className="flex items-center">
@@ -178,18 +178,18 @@ const OpportunitiesSection = () => {
             <div className="p-6">
               <div className="space-y-6">
                 {opportunities[activeTab].careers.map((career, index) => (
-                  <div key={index} className="border-b border-gray-100 pb-6">
-                    <h4 className="text-xl font-bold text-gray-800 mb-1">
+                  <div key={index} className="border-b border-gray-700 pb-6">
+                    <h4 className="text-xl font-bold text-white mb-1">
                       {career.title}
                     </h4>
-                    <div className="flex items-center text-gray-600 mb-2">
-                      <span className="font-medium text-cyan-600">
+                    <div className="flex items-center text-gray-400 mb-2">
+                      <span className="font-medium text-cyan-400">
                         {career.salary}
                       </span>
                       <span className="mx-2">•</span>
                       <span>{career.demand}</span>
                     </div>
-                    <p className="text-gray-600">{career.description}</p>
+                    <p className="text-gray-300">{career.description}</p>
                   </div>
                 ))}
               </div>
@@ -202,9 +202,9 @@ const OpportunitiesSection = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden mb-8"
+              className="bg-gray-800 rounded-xl shadow-lg overflow-hidden mb-8"
             >
-              <div className="p-6 bg-gray-800 text-white">
+              <div className="p-6 bg-gray-700 text-white">
                 <h3 className="text-2xl font-bold">Why Learn {activeTab === "blockchain" ? "Blockchain" : "AI"}?</h3>
               </div>
               <div className="p-6">
@@ -214,13 +214,13 @@ const OpportunitiesSection = () => {
                       <div
                         className={`flex-shrink-0 mt-1 ${
                           activeTab === "blockchain"
-                            ? "text-purple-500"
-                            : "text-cyan-500"
+                            ? "text-purple-400"
+                            : "text-cyan-400"
                         }`}
                       >
                         <FaCheck />
                       </div>
-                      <span className="ml-3 text-gray-700">{benefit}</span>
+                      <span className="ml-3 text-gray-300">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -234,8 +234,8 @@ const OpportunitiesSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className={`p-6 rounded-xl shadow-lg overflow-hidden text-white ${
                 activeTab === "blockchain"
-                  ? "bg-gradient-to-r from-purple-500 to-indigo-600"
-                  : "bg-gradient-to-r from-cyan-500 to-blue-600"
+                  ? "bg-linear-to-r from-purple-500 to-indigo-600"
+                  : "bg-linear-to-r from-cyan-500 to-blue-600"
               }`}
             >
               <h3 className="text-2xl font-bold mb-4">
@@ -245,13 +245,6 @@ const OpportunitiesSection = () => {
                 Enroll now and gain the skills that will shape the future of
                 technology.
               </p>
-              <motion.button
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="bg-white text-gray-800 px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all"
-              >
-                Register Today
-              </motion.button>
             </motion.div>
           </div>
         </div>

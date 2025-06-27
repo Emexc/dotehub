@@ -1,4 +1,4 @@
-# FutureTech Academy 🌐🤖
+# Dote Hub Academy 🌐🤖
 
 **Empowering Students and Tech Enthusiasts in Blockchain & AI**
 
