@@ -81,7 +81,7 @@ const App = () => {
   // Program timeline data
   const programTimeline = [
     {
-      week: 1,
+      week: "Week 1",
       date: "Jul 13-19",
       blockchainContent: "Blockchain Fundamentals & Ethereum Basics",
       blockchainTopics: [
@@ -99,7 +99,7 @@ const App = () => {
       ],
     },
     {
-      week: 2,
+      week: "Week 2",
       date: "Jul 20-26",
       blockchainContent: "Smart Contracts & DApp Development",
       blockchainTopics: [
@@ -117,7 +117,7 @@ const App = () => {
       ],
     },
     {
-      week: 3,
+      week: "Week 3",
       date: "Jul 27-Aug 2",
       blockchainContent: "Advanced Blockchain Concepts",
       blockchainTopics: [
@@ -135,7 +135,7 @@ const App = () => {
       ],
     },
     {
-      week: 4,
+      week: "Week 4",
       date: "Aug 3-9",
       blockchainContent: "DeFi & NFT Ecosystems",
       blockchainTopics: [
@@ -153,7 +153,7 @@ const App = () => {
       ],
     },
     {
-      week: 5,
+      week: "Week 5",
       date: "Aug 10-16",
       blockchainContent: "Blockchain for AI Applications",
       blockchainTopics: [
@@ -171,7 +171,7 @@ const App = () => {
       ],
     },
     {
-      week: 6,
+      week: "Week 6",
       date: "Aug 17-23",
       blockchainContent: "Capstone Project Development",
       blockchainTopics: [
