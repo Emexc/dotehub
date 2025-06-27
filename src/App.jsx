@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { FaRobot, FaEthereum } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import OpportunitiesSection from "./components/Career";
+import Logo from "../public/vite.svg"
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -239,7 +240,7 @@ const App = () => {
               className="flex items-center space-x-2"
             >
               <div className="w-10 h-10 bg-linear-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <FaRobot className="text-xl text-white" />
+                <img src={Logo} alt="Dotehub"/>
               </div>
               <span className="text-2xl font-bold bg-linear-to-r from-cyan-600 to-blue-700 bg-clip-text text-transparent">
                 DOT-E HUB
@@ -980,7 +981,7 @@ const App = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-linear-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
-                  <FaRobot className="text-xl text-white" />
+                <img src={Logo} alt="Dotehub"/>
                 </div>
                 <span className="text-xl font-bold bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   DOT-E HUB
