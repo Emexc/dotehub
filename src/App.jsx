@@ -538,7 +538,7 @@ const App = () => {
               Dual-Track Learning Timeline
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              8-weeks journey with dedicated Blockchain and AI tracks starting
+              6-weeks journey with dedicated Blockchain and AI tracks starting
               July 13th
             </p>
           </motion.div>
@@ -575,7 +575,7 @@ const App = () => {
                 >
                   {/* Week indicator */}
                   <div className="w-full md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
-                    <div className="w-12 h-12 rounded-full bg-linear-to-r from-gray-800 to-gray-900 flex items-center justify-center text-white font-bold shadow-lg">
+                    <div className="w-15 h-15 text-[13px] rounded-full bg-linear-to-r from-gray-800 to-gray-900 flex items-center justify-center text-white font-bold shadow-lg">
                       {item.week}
                     </div>
                   </div>
