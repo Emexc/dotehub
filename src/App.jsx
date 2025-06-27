@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaRobot, FaEthereum } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import OpportunitiesSection from "./components/Career";
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -645,6 +646,8 @@ const App = () => {
         </div>
       </section>
 
+      <OpportunitiesSection />
+
       {/* Pricing Section */}
       <section id="pricing" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -677,7 +680,7 @@ const App = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Blockchain Only</h3>
                 <div className="mt-4 flex justify-center items-baseline">
-                  <span className="text-4xl font-bold">₦22,500</span>
+                  <span className="text-4xl font-bold">₦37,500</span>
                 </div>
               </div>
               <div className="p-6">
@@ -690,7 +693,7 @@ const App = () => {
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                     </div>
                     <span className="text-gray-700">
-                      4 weeks of Blockchain content
+                      8 weeks of Blockchain content
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -754,8 +757,8 @@ const App = () => {
                   </div>
                   <h3 className="text-2xl font-bold">Complete Bundle</h3>
                   <div className="mt-4 flex justify-center items-baseline">
-                    <span className="text-4xl font-bold">₦40,000</span>
-                    <span className="ml-2 text-cyan-100">(Save ₦5,000)</span>
+                    <span className="text-4xl font-bold">₦65,000</span>
+                    <span className="ml-2 text-cyan-100">(Save ₦10,000)</span>
                   </div>
                 </div>
                 <div className="p-6">
@@ -824,7 +827,7 @@ const App = () => {
                 </div>
                 <h3 className="text-2xl font-bold">AI Only</h3>
                 <div className="mt-4 flex justify-center items-baseline">
-                  <span className="text-4xl font-bold">₦22,500</span>
+                  <span className="text-4xl font-bold">₦37,500</span>
                 </div>
               </div>
               <div className="p-6">
